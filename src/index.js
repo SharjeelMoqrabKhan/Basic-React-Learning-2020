@@ -1,12 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
 
-ReactDOM.render(
-  <React.Fragment>
-    <h1>Hello World</h1>
-    <p>
-      Render Multiple Elements inside ReactDOM by using array in React above 16
-    </p>
-  </React.Fragment>,
-  document.getElementById("root")
-);
+const Netflix = () => {
+  return (
+    <React.Fragment>
+      <h1>Netflix Pack</h1>
+      <p>My Fav Series on Netflix</p>
+      <ol>
+        <li>MirzaPur</li>
+        <li>Away</li>
+        <li>Ozak</li>
+      </ol>
+    </React.Fragment>
+  );
+};
+
+ReactDom.render(<Netflix />, document.getElementById("root"));
