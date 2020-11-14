@@ -1,18 +1,10 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
+const name = "Sharjeel khan";
 
-const Netflix = () => {
-  return (
-    <React.Fragment>
-      <h1>Netflix Pack</h1>
-      <p>My Fav Series on Netflix</p>
-      <ol>
-        <li>MirzaPur</li>
-        <li>Away</li>
-        <li>Ozak</li>
-      </ol>
-    </React.Fragment>
-  );
-};
-
-ReactDom.render(<Netflix />, document.getElementById("root"));
+ReactDOM.render(
+  <h1>
+    hi my name is {name} and my age is {12.5 * 2}
+  </h1>,
+  document.getElementById("root")
+);
