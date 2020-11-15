@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const firstName = "Sharjeel";
-const middleName = "Moqrab";
-const lastName = "Khan";
+const name = "Sharjeel";
+let getDate = new Date().toLocaleDateString();
+let getCurrentTime = new Date().toLocaleTimeString();
 
 ReactDOM.render(
-  <h1>
-    Asalam O Ealikum {`${firstName} ${middleName} ${lastName}`}
-  </h1>,
+  <React.Fragment>
+    <h1>Hi my name is {name}</h1>
+    <p>Today date is {getDate}</p>
+    <p>Today date is {getCurrentTime}</p>
+  </React.Fragment>,
   document.getElementById("root")
 );
