@@ -1,46 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "../src/index.css";
+import "./index.css";
 
-const imgLink = [
-  {
-    id: 1,
-    url: "https://picsum.photos/200/300",
-  },
-  {
-    id: 2,
-    url: "https://picsum.photos/210/300",
-  },
-  {
-    id: 3,
-    url: "https://picsum.photos/220/300",
-  },
-];
+let currentTime = new Date().getHours();
+let greeting;
+let greetColor = {};
 
-const address = {
-  textAlign: "center",
-  textTransform: "uppercase",
-  fontFamily: "Goldman",
-};
+if (currentTime >= 1 && currentTime < 12) {
+  greeting = "Good Morning";
+  greetColor.color = "Green";
+} else if (currentTime >= 12 && currentTime < 19) {
+  greeting = "Good Evening";
+  greetColor.color = "Orange";
+} else {
+  greeting = "Good Night";
+  greetColor.color = "Red";
+}
 
 ReactDOM.render(
   <React.Fragment>
-    <h1 className="heading">Image Gallery</h1>
-    <p
-      style={{
-        textAlign: "center",
-        fontFamily: "fantasy",
-        textTransform: "capitalize",
-      }}
-    >
-      Welcome to my site
-    </p>
-    <div className="galleryImages">
-      <img src={imgLink[0].url} alt="random" />
-      <img src={imgLink[1].url} alt="random" />
-      <img src={imgLink[2].url} alt="random" />
+    <div className="box">
+      <h1 style={({ fontFamily: "Goldman" }, { fontSize: "32px" })}>
+        Hello Sir <span style={greetColor}> {greeting} </span>
+      </h1>
     </div>
-    <p style={address}>https://www.facebook.com/sharjeelriaz1</p>
   </React.Fragment>,
   document.getElementById("root")
 );
