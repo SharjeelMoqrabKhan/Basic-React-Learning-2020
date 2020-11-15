@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-const name = "Sharjeel khan";
+
+const firstName = "Sharjeel";
+const middleName = "Moqrab";
+const lastName = "Khan";
 
 ReactDOM.render(
   <h1>
-    hi my name is {name} and my age is {12.5 * 2}
+    Asalam O Ealikum {`${firstName} ${middleName} ${lastName}`}
   </h1>,
   document.getElementById("root")
 );
