@@ -20,6 +20,15 @@ const imgLink = [
 ReactDOM.render(
   <React.Fragment>
     <h1 className="heading">Image Gallery</h1>
+    <p
+      style={{
+        textAlign: "center",
+        fontFamily: "fantasy",
+        textTransform: "capitalize",
+      }}
+    >
+      Welcome to my site
+    </p>
     <div className="galleryImages">
       <img src={imgLink[0].url} alt="random" />
       <img src={imgLink[1].url} alt="random" />
