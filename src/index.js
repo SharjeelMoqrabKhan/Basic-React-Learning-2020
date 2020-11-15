@@ -17,6 +17,12 @@ const imgLink = [
   },
 ];
 
+const address = {
+  textAlign: "center",
+  textTransform: "uppercase",
+  fontFamily: "Goldman",
+};
+
 ReactDOM.render(
   <React.Fragment>
     <h1 className="heading">Image Gallery</h1>
@@ -34,6 +40,7 @@ ReactDOM.render(
       <img src={imgLink[1].url} alt="random" />
       <img src={imgLink[2].url} alt="random" />
     </div>
+    <p style={address}>https://www.facebook.com/sharjeelriaz1</p>
   </React.Fragment>,
   document.getElementById("root")
 );
