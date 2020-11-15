@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "../src/index.css";
 
 const imgLink = [
   {
@@ -18,10 +19,12 @@ const imgLink = [
 
 ReactDOM.render(
   <React.Fragment>
-    <h1>Image Gallery</h1>
-    <img src={imgLink[0].url} alt="random" />
-    <img src={imgLink[1].url} alt="random" />
-    <img src={imgLink[2].url} alt="random" />
+    <h1 className="heading">Image Gallery</h1>
+    <div className="galleryImages">
+      <img src={imgLink[0].url} alt="random" />
+      <img src={imgLink[1].url} alt="random" />
+      <img src={imgLink[2].url} alt="random" />
+    </div>
   </React.Fragment>,
   document.getElementById("root")
 );

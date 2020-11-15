@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  size: 32px;
+  color: #cf0754;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.galleryImages {
+  margin: 20px 50px 20px 250px;
+  padding-right: 10%;
+  justify-content: center;
+}
