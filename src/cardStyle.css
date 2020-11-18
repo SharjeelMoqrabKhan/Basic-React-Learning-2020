@@ -1,0 +1,15 @@
+body {
+  background-color: #7fccf3;
+  margin: 100px -100px 20px 200px;
+}
+
+.box-field {
+  width: 25%;
+  display: inline-block;
+  transition: transform .2s;
+}
+
+.box-field:hover{
+  transform: scale(1.1); 
+}
+
