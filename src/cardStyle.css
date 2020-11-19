@@ -1,15 +1,19 @@
 body {
-  background-color: #7fccf3;
+  background-color: #d0d4d6;
   margin: 100px -100px 20px 200px;
 }
 
 .box-field {
   width: 25%;
   display: inline-block;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.box-field:hover{
-  transform: scale(1.1); 
+.box-field:hover {
+  transform: scale(1.1);
 }
 
+.headingOne {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+ margin: 100px -100px 50px 200px;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/cardStyle.css";
 
-
 const Card = (props) => {
   const { img, name, link } = props;
   return (
@@ -16,7 +15,7 @@ const Card = (props) => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href={link} target="_" class="btn btn-primary">
+            <a href={link} target="_" className="btn btn-primary">
               Watch
             </a>
           </div>

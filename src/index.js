@@ -1,14 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./Card";
-import md from "./movieDetails";
+import movieList from "./movieDetails";
 
+const showCard = movieList.map((value, index) => {
+  return (
+    <Card
+      name={value.movieName}
+      img={value.imageURL}
+      link={value.link}
+      key={index}
+    />
+  );
+});
 
 ReactDOM.render(
   <React.Fragment>
-    <Card img={md[0].imageURL} name={md[0].movieName} link={md[0].link} />
-    <Card img={md[1].imageURL} name={md[1].movieName} link={md[1].link} />
-    <Card img={md[2].imageURL} name={md[2].movieName} link={md[2].link} />
+    <h1 className="headingOne">Top Movies on Amazon</h1>
+    {showCard}
   </React.Fragment>,
   document.getElementById("root")
 );
