@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Count from "../src/Count";
+import Time from "../src/Time";
 
-ReactDOM.render(<Count />, document.getElementById("root"));
+ReactDOM.render(<Time />, document.getElementById("root"));
