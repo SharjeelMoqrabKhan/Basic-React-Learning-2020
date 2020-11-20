@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Time from "../src/Time";
+import DigitalWatch from "../src/DigitalWatch";
 
-ReactDOM.render(<Time />, document.getElementById("root"));
+ReactDOM.render(<DigitalWatch />, document.getElementById("root"));
