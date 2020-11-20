@@ -4,11 +4,9 @@ import movieList from "./movieDetails";
 
 const clickHandler = () => {
   let movieProduce = prompt("Netflex or Amazon Please Eneter");
-  if (movieProduce === movieList[0].produce) {
-    console.log("Match");
-  } else {
-    console.log("not found");
-  }
+  movieProduce === movieList[0].produce
+    ? console.log("Match")
+    : console.log("not found");
 };
 
 const ShowCard = movieList.map((value, index) => {
