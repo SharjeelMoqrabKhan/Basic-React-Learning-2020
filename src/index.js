@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "../src/App";
+import Count from "../src/Count";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Count />, document.getElementById("root"));
