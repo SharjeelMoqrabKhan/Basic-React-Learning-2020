@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import DigitalWatch from "../src/DigitalWatch";
+import Event from "../src/Event";
 
-ReactDOM.render(<DigitalWatch />, document.getElementById("root"));
+ReactDOM.render(<Event />, document.getElementById("root"));
