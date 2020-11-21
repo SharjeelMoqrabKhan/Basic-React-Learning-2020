@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Event from "../src/Event";
+import Form from "../src/Form";
 
-ReactDOM.render(<Event />, document.getElementById("root"));
+ReactDOM.render(<Form />, document.getElementById("root"));
