@@ -11,25 +11,11 @@ const Form = () => {
   const inputHandler = (e) => {
     const { name, value } = e.target;
     setFullname((preValue) => {
-      if (name === "firstName") {
-        return {
-          firstName: value,
-          lastName: preValue.lastName,
-          email: preValue.email,
-        };
-      } else if (name === "lastName") {
-        return {
-          firstName: preValue.firstName,
-          lastName: value,
-          email: preValue.email,
-        };
-      } else if (name === "email") {
-        return {
-          firstName: preValue.firstName,
-          lastName: preValue.lastName,
-          email: value,
-        };
-      }
+      console.log(preValue);
+      return {
+        ...preValue,
+        [name]: value,
+      };
     });
   };
 
