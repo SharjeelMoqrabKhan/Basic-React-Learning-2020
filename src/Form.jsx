@@ -5,21 +5,29 @@ const Form = () => {
   const [fullName, setFullname] = useState({
     firstName: "",
     lastName: "",
+    email: "",
   });
 
   const inputHandler = (e) => {
-    const value = e.target.value;
-    const name = e.target.name;
+    const { name, value } = e.target;
     setFullname((preValue) => {
       if (name === "firstName") {
         return {
           firstName: value,
           lastName: preValue.lastName,
+          email: preValue.email,
         };
       } else if (name === "lastName") {
         return {
           firstName: preValue.firstName,
           lastName: value,
+          email: preValue.email,
+        };
+      } else if (name === "email") {
+        return {
+          firstName: preValue.firstName,
+          lastName: preValue.lastName,
+          email: value,
         };
       }
     });
@@ -30,6 +38,7 @@ const Form = () => {
       <h1 style={{ color: "white" }}>
         Hi {fullName.firstName} {fullName.lastName}
       </h1>
+      <p> {fullName.email}</p>
       <form onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
@@ -45,7 +54,28 @@ const Form = () => {
           value={fullName.lastName}
           onChange={inputHandler}
         />
-        <button type="submit" style={{ margin: "20px" }}>
+        <input
+          type="text"
+          placeholder="Email"
+          name="email"
+          value={fullName.email}
+          onChange={inputHandler}
+        />
+        <button
+          type="submit"
+          style={{ margin: "20px" }}
+          onClick={() => {
+            alert(
+              fullName.firstName +
+                "\n" +
+                fullName.lastName +
+                "\n" +
+                fullName.email +
+                "\n" +
+                "SUBMITTED"
+            );
+          }}
+        >
           Say Hi
         </button>
       </form>
