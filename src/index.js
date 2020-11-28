@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TodoApp from "../src/TodoApp";
+import Card from "../src/Chellenge";
 
-ReactDOM.render(<TodoApp />, document.getElementById("root"));
+ReactDOM.render(<Card />, document.getElementById("root"));
