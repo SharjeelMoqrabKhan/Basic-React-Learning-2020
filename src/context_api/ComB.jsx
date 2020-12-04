@@ -1,6 +1,6 @@
 import React from "react";
 import ComC from "./ComC";
-import Comc from "./ComC";
+
 
 const ComB = () => {
   return (

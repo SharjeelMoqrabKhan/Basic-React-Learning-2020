@@ -7,7 +7,7 @@ const App2 = () => {
   return (
     <React.Fragment>
       <FirstName.Provider value={"sharjeel"}>
-        <LastName.Provider value={"Moqrab Khan"}>
+        <LastName.Provider value={"Riaz"}>
           <ComA />
         </LastName.Provider>
       </FirstName.Provider>
