@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const UseEffact = () => {
   const [num, setnum] = useState(0);
   useEffect(() => {
-    alert(`you have  clicked ${num} times`);
+    document.title = `you clicked me ${num}`;
   }, [num]);
   return (
     <React.Fragment>
