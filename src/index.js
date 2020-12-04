@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App2 from './app2'
+import UseEffact from "./useEffact/UseEffact";
 
-
-
-ReactDOM.render(<App2/>, document.getElementById("root"));
+ReactDOM.render(<UseEffact />, document.getElementById("root"));
