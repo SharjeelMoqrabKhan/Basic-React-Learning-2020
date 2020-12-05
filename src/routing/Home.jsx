@@ -1,7 +1,12 @@
 import React from "react";
-
-const Home = ()=>{
-    return <> <h1>Home Page</h1> </>
-}
+import {Menu} from "./Menu";
+const Home = () => {
+  return (
+    <>
+      <Menu />
+      <h1>Home Page</h1>
+    </>
+  );
+};
 
 export default Home;
