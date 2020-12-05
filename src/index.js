@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import UseEffact from "./useEffact/UseEffact";
+import Pokemon from "./Pokemon/Pokemon";
 
-ReactDOM.render(<UseEffact />, document.getElementById("root"));
+ReactDOM.render(<Pokemon />, document.getElementById("root"));
