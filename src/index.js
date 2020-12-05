@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Pokemon from "./Pokemon/Pokemon";
+import {BrowserRouter} from "react-router-dom";
+import App from "./routing/App";
 
-ReactDOM.render(<Pokemon />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
