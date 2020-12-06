@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./Home";
 import About from "./About";
 import Users from "./Users";
+import Searching from "./Search";
 import NotFound from "./NotFound";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/user/:firstName/:lastName" component={Users} />
         <Route component={NotFound} />
       </Switch>
+      <Searching/>
     </>
   );
 };
