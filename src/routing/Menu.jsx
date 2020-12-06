@@ -10,6 +10,9 @@ const Menu = () => {
       <NavLink exact to="/about">
         About
       </NavLink>
+      <NavLink to="/user/sharjeel/riaz">
+        Users
+      </NavLink>
     </React.Fragment>
   );
 };
